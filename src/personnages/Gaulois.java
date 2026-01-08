@@ -15,7 +15,13 @@ public class Gaulois {
 	}
 	
 	public void parler(String message) {
-		System.out.println("Le Gaulois " + nom + " \"" + message + '"' + ".");
+		System.out.println("Le Gaulois " + nom + " : \"" + message + '"' + ".");
+	}
+	
+	public void frapper(Romain romain) {
+		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom() + " !");
+		romain.recevoirCoup(force/3);
+		
 	}
 	
 	public static void main(String[] args) {
