@@ -43,7 +43,7 @@ public class Camp {
 			newCommandant.parler("Moi " + newCommandant.getNom() + " je prends la direction du camp romain.");
 			commandant = newCommandant;
 		} else {
-			newCommandant.parler("Je ne suis pas suffisamment gradé pour prendre la direction du camp.");			
+			newCommandant.parler("Je ne suis pas suffisamment gradé pour prendre la direction du camp romain.");			
 		}
 	}
 

@@ -1,5 +1,6 @@
 package test_fonctionnel;
 
+import personnages.Druide;
 import personnages.Gaulois;
 import personnages.Romain;
 
@@ -17,6 +18,12 @@ public class TestGaulois {
 		asterix.frapper(minus);
 		asterix.frapper(minus);
 		asterix.frapper(minus);
+		
+		System.out.println();
+		
+		Druide panoramix = new Druide("Panoramix", 5);
+		panoramix.fabriquerPotions(3);
+		panoramix.afficherInformationsDruide();
 	}
 
 }

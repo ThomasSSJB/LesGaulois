@@ -2,7 +2,6 @@ package sites;
 
 import personnages.Gaulois;
 import personnages.Grades;
-import personnages.Romain;
 import personnages.Soldat;
 
 public class TestSites {
