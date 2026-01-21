@@ -2,8 +2,8 @@ package personnages;
 
 public abstract class Personnage {
 	
-	private String nom;
-	private int force;
+	protected String nom;
+	protected int force;
 	
 	protected Personnage(String nom, int force) {
 		this.nom = nom;
@@ -26,7 +26,7 @@ public abstract class Personnage {
 	}
 	
 	public void recevoirCoup(int forceCoup) {
-		if ( (force-forceCoup) <= 0) {
+		if ( (force-forceCoup) <= 0 ) {
 			force = 0;
 			this.parler("J'abandonne...");
 		} else {
