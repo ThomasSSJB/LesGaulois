@@ -25,9 +25,7 @@ public class TestGaulois {
 		
 		System.out.println();
 		minus.parler("UN GAU... UN GAUGAU...");
-		asterix.frapper(minus);
-		asterix.frapper(minus);
-		asterix.frapper(minus);
+		asterix.combattre(minus);
 		
 	}
 

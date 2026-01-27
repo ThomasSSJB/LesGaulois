@@ -33,5 +33,18 @@ public abstract class Personnage {
 			force -= forceCoup;
 			this.parler("Aïe !");
 		}
-	}	
+	}
+	
+	public void combattre(Personnage adversaire) {
+	    while (this.force > 0 && adversaire.getForce() > 0) {
+	        this.frapper(adversaire);
+	        if (adversaire.getForce() > 0) {
+	            adversaire.frapper(this);
+	        }
+	    }
+	}
+
+	private int getForce() {
+		return force;
+	}
 }
