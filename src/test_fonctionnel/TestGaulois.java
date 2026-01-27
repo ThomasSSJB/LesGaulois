@@ -1,8 +1,11 @@
 package test_fonctionnel;
 
 import personnages.Druide;
+import personnages.Equipement;
 import personnages.Gaulois;
+import personnages.Grades;
 import personnages.Romain;
+import personnages.Soldat;
 
 public class TestGaulois {
 	
@@ -12,8 +15,12 @@ public class TestGaulois {
 		Gaulois abraracourcix = new Gaulois("Abraracourcix", 5);
 		Gaulois asterix = new Gaulois("Astérix", 5);
 		Gaulois obelix = new Gaulois("Obélix", 15);
-		Romain minus = new Romain("Minus", 6);
+		Soldat minus = new Soldat("Minus", 6, Grades.SOLDAT);
 		Druide panoramix = new Druide("Panoramix", 5);
+		
+		minus.ajouterEquipement(Equipement.BOUCLIER);
+		minus.ajouterEquipement(Equipement.CASQUE);
+		minus.ajouterEquipement(Equipement.PLASTRON);
 		
 		panoramix.fabriquerPotions(3);
 		panoramix.boosterGaulois(asterix);

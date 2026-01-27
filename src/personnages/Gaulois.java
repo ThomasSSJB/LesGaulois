@@ -15,7 +15,7 @@ public class Gaulois extends Personnage {
 	
 	@Override
 	public void frapper(Personnage adversaire) {
-		float forceCoup = (super.force*puissanceActuellePotion)/3;
+		float forceCoup = super.force*puissanceActuellePotion;
 		System.out.println("Le Gaulois " + super.nom + " donne un grand coup de force " + forceCoup + " au " + adversaire.donnerAuteur() + " " + adversaire.getNom() + ".");
 		adversaire.recevoirCoup((int)forceCoup);
 		if (forceCoup > 1) {

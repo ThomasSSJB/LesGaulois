@@ -22,7 +22,7 @@ public abstract class Personnage {
 	
 	public void frapper(Personnage adversaire) {
 		System.out.println("Le " + donnerAuteur() + " " + nom + " donne un grand coup au " + adversaire.donnerAuteur() + " " + adversaire.getNom() + ".");
-		adversaire.recevoirCoup(force/3);
+		adversaire.recevoirCoup(force);
 	}
 	
 	public void recevoirCoup(int forceCoup) {

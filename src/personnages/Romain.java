@@ -9,6 +9,5 @@ public class Romain extends Personnage {
 	@Override
 	protected String donnerAuteur() {
 		return "romain";
-	}
-	
+	}	
 }
