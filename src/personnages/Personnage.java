@@ -14,6 +14,10 @@ public abstract class Personnage {
 		return nom;
 	}
 	
+	public int getForce() {
+		return force;
+	}
+	
 	public void parler(String texte) {
 		System.out.println("Le " + donnerAuteur() + " " + nom + " : \"" + texte + '"' + ".");
 	}
@@ -42,9 +46,5 @@ public abstract class Personnage {
 	            adversaire.frapper(this);
 	        }
 	    }
-	}
-
-	private int getForce() {
-		return force;
 	}
 }
