@@ -47,14 +47,13 @@ public class TestBataille {
 		System.out.println();
 		
 		Gaulois[] promeneurs = {ordralfabetix, cetautomatix, obelix, asterix};
-		Soldat[] soldatsEmbuscade = {quintilius, minus};
+		Soldat[] soldats = {quintilius, minus};
 		
 		Conteur goscinny = new Conteur("Goscinny");
 		Embuscade embuscade = new Embuscade("Dans une sombre forêt dans un coin reculé de la Gaule, quatre comparses se promènent.");
-		embuscade.setVillage(village);
 		embuscade.setCamp(camp);
 		embuscade.setPromeneurs(promeneurs);
-		embuscade.setSoldats(soldatsEmbuscade);
+		embuscade.setSoldats(soldats);
 		
 		goscinny.raconterHistoire(embuscade, "Je suis Goscinny. Je vais vous conter une histoire qui se déroule en 50 avant Jésus-Christ, du temps où la Gaule est occupée par les Romains.");
 	}

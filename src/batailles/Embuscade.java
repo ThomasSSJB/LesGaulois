@@ -3,28 +3,21 @@ package batailles;
 import java.util.Random;
 import personnages.Equipement;
 import personnages.Gaulois;
-import personnages.Grades;
 import personnages.Personnage;
 import personnages.Soldat;
 import sites.Camp;
-import sites.Village;
 
 public class Embuscade implements IBataille {
 	
 	private String contexte;
 	private Gaulois[] promeneurs;
 	private Soldat[] soldats;
-	private Village village;
 	private Camp camp;
 	private Random random;
 	
 	public Embuscade(String contexte) {
 		this.contexte = contexte;
 		this.random = new Random();
-	}
-	
-	public void setVillage(Village village) {
-		this.village = village;
 	}
 	
 	public void setCamp(Camp camp) {
@@ -51,9 +44,7 @@ public class Embuscade implements IBataille {
 		resultat += "Il s'agit de " + afficherListe(promeneurs) + ".\n";
 		
 		if (soldats.length == 1) {
-			resultat += "Mais caché derrière des bosquets se cache " + soldats[0].getNom() + ".";
-		} else if (soldats.length == 2) {
-			resultat += "Mais cachés derrière des bosquets se cachent " + soldats[0].getNom() + " et " + soldats[1].getNom() + ".";
+			resultat += "Mais caché derrière des bosquets se cache " + afficherListe(soldats) + ".";
 		} else {
 			resultat += "Mais cachés derrière des bosquets se cachent " + afficherListe(soldats) + ".";
 		}
