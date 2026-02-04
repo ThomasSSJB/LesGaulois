@@ -17,20 +17,19 @@ public class Soldat extends Romain {
 		return "soldat";
 	}
 	
-	public void ajouterEquipement(Equipement equipement) {
+	public String ajouterEquipement(Equipement equipement) {
 		for (int i=0 ; i<nbEquipements ; i++) {
 			if (equipements[i] == equipement) {
-				System.out.println("Le " + grade + " " + nom + " possède déjà un " + equipement + " !");
-				return;
+				return "Le " + grade + " " + nom + " possède déjà un " + equipement + " !";
 			}
 		}
 		
 		if (nbEquipements < 3) {
 			equipements[nbEquipements] = equipement;
 			nbEquipements++;
-			System.out.println("Le " + grade + " " + nom + " s'équipe avec un " + equipement + ".");
+			return "- Le " + grade + " " + nom + " s'équipe avec un " + equipement + ".";
 		} else {
-			System.out.println("Le " + grade + " " + nom + " est déjà équipé au maximum !");
+			return "Le " + grade + " " + nom + " est déjà équipé au maximum !";
 		}
 	}
 	

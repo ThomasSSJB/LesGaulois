@@ -19,7 +19,7 @@ public class Village {
 	}
 	
 	public boolean ajouterVillageois(Gaulois villageois) {
-		if (nbVillageois > 3) {
+		if (nbVillageois > 50) {
 			chef.parler("Désolé " + villageois.getNom() + " mon village est déjà bien rempli.");
 			return false;
 		} else {
